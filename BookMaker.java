@@ -35,9 +35,8 @@ public class BookMaker {
 	 * pass to a WordReplacer object, and calls appropriate methods from
 	 * WordReplacer object to create a customized book in html
 	 * 
-	 * @param args
-	 *            String array of input File, name to replace, replacement name
-	 *            and flag for large or small type
+	 * @param args String array of input File, name to replace, replacement name
+	 *        and flag for large or small type
 	 */
 	public static void main(String[] args) {
 		String inputFileName = null;
@@ -72,9 +71,10 @@ public class BookMaker {
 	 * Method: makeBook Creates a book with all instances of nameToReplace
 	 * replaced with replacementName
 	 * 
-	 * @param String
-	 *            inputFileName, String nameToReplace, String replacementName,
-	 *            boolean useLargeFont
+	 * @param inputFileName
+	 * @param nameToReplace
+	 * @param replacementName 
+	 * @param useLargeFont
 	 */
 	private static void makeBook(String inputFileName, String nameToReplace, String replacementName,
 			boolean useLargeFont) {
@@ -89,8 +89,7 @@ public class BookMaker {
 	/**
 	 * Method: checkFont determines if a large font is desired by user
 	 * 
-	 * @param String
-	 *            choice
+	 * @param choice
 	 * @return boolean
 	 */
 	private static boolean checkFont(String choice) {
@@ -124,8 +123,8 @@ public class BookMaker {
 	 * Method: checkNames double checks replacement name is not equal to the
 	 * name to be replaced
 	 * 
-	 * @param String
-	 *            nameToReplace, String replacementName
+	 * @param nameToReplace
+	 * @param replacementName
 	 * @return String replacementName
 	 */
 	private static String checkNames(String nameToReplace, String replacementName) {
@@ -140,8 +139,8 @@ public class BookMaker {
 	/**
 	 * Method: getName prompts for a valid name and returns a valid name
 	 * 
-	 * @param Pattern
-	 *            regExPattern, boolean replacement
+	 * @param regExPattern
+	 * @param replacement
 	 * @return String
 	 */
 	private static String getName(Pattern regExPattern, boolean replacement) {
@@ -156,8 +155,9 @@ public class BookMaker {
 	 * Method: checkName double checks a string is a valid name and returns a
 	 * valid name
 	 * 
-	 * @param String
-	 *            name, Pattern regExPattern, String prompt
+	 * @param name
+	 * @parm regExPattern
+	 * @param prompt
 	 * @return String name
 	 */
 	private static String checkName(String name, Pattern regExPattern, String prompt) {
@@ -194,8 +194,7 @@ public class BookMaker {
 	/**
 	 * Method: checkInput double checks file is valid
 	 * 
-	 * @param String
-	 *            fileName
+	 * @param fileName
 	 * @return String fileName
 	 */
 	public static String checkInput(String fileName) {
