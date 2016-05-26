@@ -93,7 +93,6 @@ public class BookMaker {
 	 * @return boolean
 	 */
 	private static boolean checkFont(String choice) {
-		Scanner in = new Scanner(System.in);
 		if (choice.equalsIgnoreCase("-L")) {
 			System.out.println("Using Large font");
 			return true;
