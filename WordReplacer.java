@@ -1,4 +1,3 @@
-
 /*
  * WordReplacer.java
  * 
@@ -151,7 +150,7 @@ public class WordReplacer {
 	}
 
 	private void doEncode() {
-		ArrayList<String> bookInHTML = new ArrayList();
+		ArrayList<String> bookInHTML = new ArrayList<String>();
 		Pattern whitespaceLine = Pattern.compile("^\\s*$");
 		Pattern twoWhitespaceChars = Pattern.compile("^\\s\\s");
 		Matcher wSLMatcher;
